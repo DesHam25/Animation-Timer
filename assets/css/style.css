@@ -1,0 +1,39 @@
+/* Base---------------------------------------------------------------------------------------------------------- */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* transition: all 0.5s ease-in-out; */
+}
+
+html {
+  /* scroll-behavior: smooth; */
+  /* This defines what 1rem is */
+  font-size: 62.5%;
+
+  /* the default font-size of the browser 16 pixels. What we want is to set it to 10 pixels using percent  10 divided by 16 is 0.625 which is turn into a percent of 62.5%. .625 * 16 = 10 pixels */
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Base---------------------------------------------------------------------------------------------------------- */
