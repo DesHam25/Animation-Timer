@@ -14,13 +14,45 @@
       src="https://kit.fontawesome.com/34701e16c6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <input type="text" id="duration">
-  <button id="start">Start</button>
-  <button id="pause">Pause</button>
   
-<script src="/assets/js/app.js"></script>
+        <div class="square square--one" style="--i:0;"></div>
+        <div class="square square--two" style="--i:1;"></div>
+        <div class="square square--three" style="--i:2;"></div>
+        <div class="square square--four" style="--i:3;"></div>
+        <div class="square square--five" style="--i:4;"></div>
+        <div class="square square--six go-back" style="--i:5;"></div>
+        <div class="square square--seven" style="--i:6;"></div>
+        <div class="square square--eight go-back" style="--i:7;"></div>
+        <div class="square square--nine go-back" style="--i:8;"></div>
+        <section class="container">
+          <div class="timer">
+            <div class="controls">
+              <input type="text" id="duration" value="3">
+              <button id="start"><i class="far fa-play-circle"></i></button>
+              <button id="pause"><i class="far fa-pause-circle"></i></button>
+            </div>
+            <svg class="dial" height ="400" width = "400">
+              <circle 
+              r="190" 
+              cx="200" 
+              cy="200"
+              fill="transparent"
+              stroke-width="15"
+              stroke-linecap="round"
+              transform="rotate(-90 200 200)"
+              >
+              </circle>
+            </svg>
+          </div>
+      </section>
+
+  
+  
+<script src="/assets/js/timer.js"></script>
+<script src="/assets/js/index.js"></script>
 </body>
 </html>

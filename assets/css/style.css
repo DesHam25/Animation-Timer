@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  
 }
 
 html {
@@ -29,10 +28,10 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-align-items: center;
-width: 100vw;
-height: 100vh;
-backdrop-filter: blur(1rem);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(1rem);
 }
 
 li {
@@ -44,9 +43,9 @@ a {
 
 /* Base---------------------------------------------------------------------------------------------------------- */
 .square {
-position: absolute;
-height: 20rem;
-width: 20rem;
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.16),
@@ -145,17 +144,15 @@ width: 20rem;
   border-radius: 0.5rem;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-  
-  
 }
 
-.timer{
-   position: relative;
+.timer {
+  position: relative;
   display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center  ;
+  text-align: center;
 }
 .timer input {
   display: block;
@@ -174,7 +171,6 @@ width: 20rem;
   margin: 1rem;
   background: none;
   color: #0d2452c4;
-  
 }
 
 .timer button:focus {
@@ -193,9 +189,7 @@ width: 20rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
 }
 .dial circle {
   stroke: #0d2452c4;
-
 }
