@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  /* transition: all 0.5s ease-in-out; */
+  
 }
 
 html {
@@ -27,6 +27,12 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   position: relative;
+  display: flex;
+  justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+backdrop-filter: blur(1rem);
 }
 
 li {
@@ -37,3 +43,159 @@ a {
 }
 
 /* Base---------------------------------------------------------------------------------------------------------- */
+.square {
+position: absolute;
+height: 20rem;
+width: 20rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+  box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  animation: animate 11s linear infinite;
+  animation-delay: calc(-2s * var(--i));
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateX(0rem);
+  }
+  50% {
+    transform: translateX(5rem);
+  }
+}
+.square--one {
+  top: 5%;
+  right: 15%;
+}
+.square--two {
+  bottom: 5%;
+  left: 25%;
+}
+.square--one {
+  top: 0%;
+  right: 15%;
+}
+.square--three {
+  top: -15%;
+  left: -5%;
+  height: 40rem;
+  width: 40rem;
+}
+.square--four {
+  top: 20%;
+  right: 35%;
+  height: 10rem;
+  width: 10rem;
+}
+.square--five {
+  bottom: -5%;
+  right: -5%;
+  height: 30rem;
+  width: 30rem;
+}
+.square--six {
+  bottom: 0%;
+  left: 0%;
+  height: 10rem;
+  width: 10rem;
+}
+
+.square--seven {
+  bottom: 30%;
+  right: 45%;
+  height: 10rem;
+  width: 10rem;
+}
+.square--eight {
+  top: -5%;
+  left: 30%;
+  height: 8rem;
+  width: 8rem;
+}
+.square--nine {
+  bottom: 43%;
+  right: -1%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.container {
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(200, 200, 200, 0.7),
+    rgba(44, 44, 44, 0.3)
+  );
+  backdrop-filter: blur(1rem);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  border-radius: 0.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  
+  
+}
+
+.timer{
+   position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center  ;
+}
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+  background: none;
+  color: #0d2452c4;
+}
+
+.timer button {
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  margin: 1rem;
+  background: none;
+  color: #0d2452c4;
+  
+}
+
+.timer button:focus {
+  outline: none;
+  color: #057a05;
+}
+.controls button:nth-child(3):focus {
+  color: #b90000;
+}
+
+.timer input:focus {
+  outline: none;
+}
+.controls {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.dial circle {
+  stroke: #0d2452c4;
+
+}
